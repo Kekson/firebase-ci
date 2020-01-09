@@ -1,6 +1,6 @@
 # Base Image - Node Platform
-FROM node:alpine
-LABEL maintainer="bachokekelidze@gmail.com" version="1.0.0"
+FROM node:10.16.3-alpine
+LABEL maintainer="bachokekelidze@gmail.com" version="1.5.0"
 
 # Install Firebase CLI
-RUN yarn upgrade firebase-tools
+RUN yarn global add firebase-tools@latest
